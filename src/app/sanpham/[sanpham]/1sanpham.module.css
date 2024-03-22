@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.fulldetail{
+    border-top: 1px solid black;
+    padding-top: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.fullinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.nprice{
+    color: red;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.pprice{
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.saleoff{
+    font-size: 14px;
+    color: rgb(194, 113, 113);
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.infotitle{
+    font-weight: 600;
+}
+
+.size{
+    padding: 50px 0;
+}
+
+.sizetitle{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.fullsize{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sizenumber{
+    background-color: rgb(214, 214, 214);
+    padding: 12px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.allbuy{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.quantity{
+    background-color: rgb(236, 236, 236);
+    padding: 13px;
+    font-size: 17px;
+    border: none;
+    width: 70px;
+    text-align: center;
+}
+
+.quantity:focus{
+    outline: none;
+}
+
+.add{
+    background-color: rgb(95, 95, 95);
+    padding: 13px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.buy{
+    background-color: rgb(43, 43, 43);
+    padding: 13px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.detailcontainer{
+    margin: 50px 0;
+    width: 70%;
+    border-radius: 2px;
+    background-color: rgb(250, 250, 250);
+}
+
+.detailtitle{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 15px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 2px;
+    border: 1px solid rgb(223, 223, 223);
+    border-bottom: none;
+}
+
+.detail{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 370;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+

@@ -1,0 +1,99 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.title{
+    padding:  80px  0 20px 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.prdContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 52px;
+    width: 100%;
+    padding: 20px 100px 0 100px;
+}
+
+.product{
+    position: relative;
+    flex-basis: 22%;
+    max-width: 282px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 420px;
+}
+
+.product:hover{
+    border: 1px solid rgb(24, 77, 59);
+    z-index: 2;
+}
+
+.saleoff{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.imagePrd{
+    z-index: -2;
+}
+
+.prdBrand{
+    color: rgb(178, 178, 178);
+    font-size: 12px;
+}
+
+.prdName{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+}
+
+.nPrice{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pPrice{
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: rgb(178, 178, 178);
+}
+
+.more{
+    padding:  0px  0 20px 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+    height: 50px;
+}
+
+.more:hover{
+    color: rgb(24, 77, 59);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+

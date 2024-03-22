@@ -1,0 +1,23 @@
+
+import styles from "./sanpham.module.css"
+import Slideshow from '@/components/slideshow/Slideshow'
+import Link from 'next/link'
+import GetProduct from '@/components/getproduct/GetProduct'
+import FilterProduct from '@/components/filterProduct/FilterProduct'
+
+const sanpham =  () => {
+  return (
+    <>
+      <Slideshow />
+      <div className={styles.container}>
+        <div className={styles.title}>Tất cả sản phẩm</div>
+        <div className={styles.fullpage}>
+          <FilterProduct/>
+        </div>
+      </div>
+    </>
+
+  )
+}
+
+export default sanpham

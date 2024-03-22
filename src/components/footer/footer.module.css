@@ -1,0 +1,147 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benfenit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    gap: 150px;
+    background-color: rgb(76, 109, 87);
+}
+.material{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: rgb(232, 232, 232);
+    height: auto;
+}
+
+
+
+.imgBenfenit {
+    border-left: 1px solid black;
+    padding-left: 100px;
+    width: auto;
+}
+
+.none {
+    border: none;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(29, 27, 27);
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.logowithname{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(199, 199, 199);
+    font-size: 50px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+
+.contact{
+    flex: 1;
+    height: 225px
+}
+
+.infoGener{
+    flex: 2.2;
+    height: 225px;
+    border-left: 1px solid black;
+    padding-left: 50px;
+}
+
+.list{
+    color: rgb(191, 191, 191);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+
+.help{
+    flex: 1;
+    height: 225px;
+    border-left: 1px solid black;
+    padding: 0 50px;
+}
+
+.connect{
+    flex: 1;
+    height: 225px;
+    border-left: 1px solid black;
+    padding: 0 50px;
+}
+
+.anyInfo{
+    display: flex;
+    gap: 18px;
+}
+
+
+.fcontact{
+    color: rgb(191, 191, 191);
+    display: flex;
+    gap: 200px;
+    border-top: 1px solid black;
+    margin-top: 100px;
+    padding: 30px 0;
+    width: 90%;
+    font-size: 18px;
+}
+
+.nocopy{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+

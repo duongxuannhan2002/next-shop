@@ -1,0 +1,222 @@
+.container {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    flex-direction: row;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.logoContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    object-fit: cover;
+}
+
+.image {
+    object-fit: cover;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+
+.navigation {
+    display: flex;
+    left: 30%;
+    flex: 3;
+    justify-content: center;
+    gap: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.link:hover {
+    color: rgb(24, 77, 59);
+}
+
+.right {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    padding-right: 100px;
+    gap: 20px;
+}
+
+.cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 33vw;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+.fullItem{
+    height: calc(100vh - 200px);
+    overflow: auto;
+}
+
+.titleContainer{
+    position: relative;
+    margin: 20px 20px 0 20px;
+}
+
+.titleCart{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.totalQuantity{
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+}
+
+.exit{
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.productContainer{
+    padding: 30px 10px 0 35px;
+    display: flex;
+}
+
+.detail{
+    padding: 0 20px;
+    position: relative;
+}
+
+.name{
+    color: #a9a9a9;
+}
+
+.price{
+    padding: 25px 0 ;
+    font-weight: 600;
+}
+
+.size{
+    color: #a9a9a9;
+}
+
+.x{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: #a9a9a9;
+}
+
+.quantity{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    border: 1px solid #a9a9a9;
+    padding: 5px 17px;
+}
+
+.bill{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    height: 200px;
+    width: 33vw;
+    background-color: #d7d7d7;
+    padding: 20px;
+}
+
+.information{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid  #939393;
+    padding-top: 10px;
+}
+
+.freeship{
+    position: absolute;
+    color: rgb(116, 116, 116);
+    font-style: italic;
+    right: 0;
+    top: 30px;
+}
+
+.feeTotal{
+    border-top: 1px solid  #939393;
+    margin-top: 35px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payFee{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    background-color: #1f552f;
+    margin-bottom: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(240, 240, 240);
+}
+
+.search{
+    display: flex;
+    position: fixed;
+    right: 110px;
+    top: 85px;
+    height: 40px;
+}
+
+
+.searchInput:focus + .searchButton{
+    background-color: rgb(24, 77, 59);
+    color:white
+}
+
+
+.searchInput{
+    border: none;
+    width: 200px;
+}
+
+.searchButton{
+    border: none;
+    width: 100px;
+    font-weight: 530;
+    font-size: 15px;
+    color: rgb(24, 77, 59); 
+}
+
+.scrolled {
+    background-color: #5a5a5a;
+}
+
