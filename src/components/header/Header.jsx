@@ -25,9 +25,9 @@ const Header = () => {
     }, []);
     
     const handleLogOut = () => {
-        localStorage.removeItem('token')
-        localStorage.removeItem('name')
-        localStorage.removeItem('id_user')
+        localStorage?.removeItem('token')
+        localStorage?.removeItem('name')
+        localStorage?.removeItem('id_user')
         window.location.href='http://localhost:3000/dangnhap'
     }
 
@@ -42,7 +42,7 @@ const Header = () => {
                 <Link href='/' className={styles.link}>TRANG CHỦ</Link>
                 <Link href='/sanpham' className={styles.link}>SẢN PHẨM</Link>
                 <Link href='/gioithieu' className={styles.link}>GIỚI THIỆU</Link>
-                {localStorage.getItem('token') ?
+                {localStorage?.getItem('token') ?
                 <Link href='/dangnhap' className={styles.link} onClick={handleLogOut}>ĐĂNG XUẤT</Link> : 
                 <Link href='/dangnhap' className={styles.link}>ĐĂNG NHẬP</Link>
             }
@@ -50,7 +50,7 @@ const Header = () => {
             </div>
             <div className={styles.right}>
                 <Image src='/shopping-cart.png' alt='' width={25} height={25} className={styles.image} onClick={() => setOpenCart(!openCart)} />
-                {localStorage.getItem('token')&&totalItem ? <div className={styles.totalItem}>{totalItem}</div> : ""}
+                {localStorage?.getItem('token')&&totalItem ? <div className={styles.totalItem}>{totalItem}</div> : ""}
                 <Image src='/search.png' alt='' width={23} height={23} className={styles.image} onClick={() => setOpensearch(!openSearch)} />
             </div>
             <Search openSearch={openSearch} />

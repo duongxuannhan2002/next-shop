@@ -74,9 +74,9 @@ export default function MotSanPham({ params }) {
 
     const handleOnAdd = async () => {
         if (select.length > 0) {
-            if (localStorage.getItem('token')) {
+            if (localStorage?.getItem('token')) {
                 const data = {
-                    token: localStorage.getItem('token'),
+                    token: localStorage?.getItem('token'),
                     id_product: sanpham,
                     size: select[0],
                     id_size: idSize,

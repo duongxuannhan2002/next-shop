@@ -14,7 +14,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
     const { check, setCheck } = useMyContext()
     const fetchData = async () => {
         try {
-            const res = await fetch(`https://ttcs-delta.vercel.app/api/v1/get-cart?token=${localStorage.getItem('token')}`)
+            const res = await fetch(`https://ttcs-delta.vercel.app/api/v1/get-cart?token=${localStorage?.getItem('token')}`)
             const jData = await res.json()
             setCart(jData.data)
             setTotalItem(jData.data.length)
@@ -25,7 +25,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
 
     useEffect(() => {
         
-        if (localStorage.getItem('token') != null) {
+        if (localStorage?.getItem('token') != null) {
             fetchData();
         }
 
@@ -57,7 +57,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
 
     const handleDel = async (id_product, id_size, size) => {
         const data = {
-            id_user: localStorage.getItem('id_user'),
+            id_user: localStorage?.getItem('id_user'),
             id_product: id_product,
             size: size,
             id_size: id_size
@@ -100,14 +100,14 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
         <>
             {openCart &&
                 <div className={styles.cart}>
-                    {localStorage.getItem('token')&&<Link href='/order' className={styles.history} onClick={()=> setOpenCart(false)} >Đơn hàng đã đặt &gt;&gt;</Link>}
+                    {localStorage?.getItem('token')&&<Link href='/order' className={styles.history} onClick={()=> setOpenCart(false)} >Đơn hàng đã đặt &gt;&gt;</Link>}
                     <div className={styles.fullItem}>
                         <div className={styles.titleContainer}>
                             <span className={styles.titleCart}>Giỏ hàng</span>
-                            {localStorage.getItem('token') ? <span className={styles.totalQuantity}>({cart.length} sản phẩm)</span> : ''}
+                            {localStorage?.getItem('token') ? <span className={styles.totalQuantity}>({cart.length} sản phẩm)</span> : ''}
                             <span className={styles.exit} onClick={() => setOpenCart(!openCart)}>x</span>
                         </div>
-                        {localStorage.getItem('token') ?
+                        {localStorage?.getItem('token') ?
                             (cart ? (cart.map((item, index) =>
                                 <div className={styles.productContainer} key={''}>
                                     <Image src={item.image} alt='' width={100} height={130} />
@@ -133,7 +133,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
                             </div>
                         }
                     </div>
-                    {localStorage.getItem('token') ? <div className={styles.bill}>
+                    {localStorage?.getItem('token') ? <div className={styles.bill}>
                         <div className={styles.information}>
                             <span className={styles.freeship}>Miễn phí vận chuyển</span>
                         </div>

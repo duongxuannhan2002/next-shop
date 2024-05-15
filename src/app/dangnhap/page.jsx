@@ -50,12 +50,11 @@ export default function Dangnhap() {
             if (responseData.message) {
                 toast.error(responseData.message)
             } else {
-                localStorage.setItem('token', responseData.token)
-                localStorage.setItem('name', responseData.data.name)
-                localStorage.setItem('id_user', responseData.data.id)
+                localStorage?.setItem('token', responseData.token)
+                localStorage?.setItem('name', responseData.data.name)
+                localStorage?.setItem('id_user', responseData.data.id)
                 window.location.href='http://localhost:3000/'
             }
-            console.log(localStorage.getItem('token'), localStorage.getItem('name'));
         } catch (error) {
             console.error('Error:', error)
         }

@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function QueryPayment() {
 
-    let data = localStorage.getItem('createOrder')
+    let data = localStorage?.getItem('createOrder')
     let order = JSON.parse(data);
 
 

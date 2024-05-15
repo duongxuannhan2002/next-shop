@@ -68,7 +68,7 @@ const Select = ({ data, select, quantity, idSize, setBuyButton }) => {
             const time = `${currentime.getHours()}:${currentime.getMinutes()} ${currentime.getDate()}-${currentime.getMonth()+1}-${currentime.getFullYear()}`
             console.log(time);
             const pdata = {
-                id_user: localStorage.getItem('token') ? localStorage.getItem('id_user') : 0,
+                id_user: localStorage?.getItem('token') ? localStorage?.getItem('id_user') : 0,
                 order_date: time,
                 address: `${address}/ ${selectedDistrict}/ ${selectedProvince}`,
                 phoneNumber: phoneNumber,
@@ -99,7 +99,7 @@ const Select = ({ data, select, quantity, idSize, setBuyButton }) => {
                     console.error('Error:', error)
                 }
             }else{
-                localStorage.setItem('createOrder',JSON.stringify(pdata))
+                localStorage?.setItem('createOrder',JSON.stringify(pdata))
                 const res = await fetch(`https://ttcs-delta.vercel.app/api/v1/payment?amount=${pdata.totalPrice}`, {
                         method: 'GET',
                         headers: {

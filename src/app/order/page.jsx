@@ -12,7 +12,7 @@ export default function Order() {
   useEffect(() => {
     const fecthAPI = async () => {
       try {
-        const res = await fetch(`https://ttcs-delta.vercel.app/api/v1/get-all-order?id_user=${localStorage.getItem('id_user')}`)
+        const res = await fetch(`https://ttcs-delta.vercel.app/api/v1/get-all-order?id_user=${localStorage?.getItem('id_user')}`)
         const jData = await res.json();
         setData(jData.data);
       } catch (error) {
