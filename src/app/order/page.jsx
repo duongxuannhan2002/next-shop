@@ -65,9 +65,9 @@ export default function Order() {
       {open && <div className={styles.detailOrder}>
         <div className={styles.x} onClick={() => setOpen(false)}>X</div>
         {oneOrder && oneOrder.map((item) => (
-          <div className={styles.info}>
+          <div className={styles.info} key={item.id}>
             <Image src={item.image} alt='' width={100} height={130} />
-            <div className={styles.detailP} key={item.id}>
+            <div className={styles.detailP}>
               <p className={styles.name}>{item.name}</p>
               <p className={styles.size}>Size: {item.size}</p>
               <div>Số lượng: {item.quantity}</div>

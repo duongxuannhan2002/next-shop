@@ -123,7 +123,7 @@ export default function MotSanPham({ params }) {
         <>
             <Slideshow />
             {data&&data.map((item) => (<div className={styles.container}>
-                <div className={styles.fulldetail}>
+                <div className={styles.fulldetail} key={''}>
                     <Image src={item.image} alt='' width={450} height={500} />
                     <div className={styles.fullinfo}>
                         <div className={styles.name}>{item.name}</div>
@@ -144,7 +144,7 @@ export default function MotSanPham({ params }) {
                             <div className={styles.sizetitle}>Size</div>
                             <div className={styles.fullsize}>
                                 {item.size.split(',').map(size => (
-                                    <div className={`${styles.sizenumber} ${select.includes(size) ? styles.sizenumberN : ''}`}
+                                    <div className={`${styles.sizenumber} ${select.includes(size) ? styles.sizenumberN : ''}`} key={''}
                                         onClick={() => handleOnClick(size)}
                                     >{size}</div>
                                 ))}

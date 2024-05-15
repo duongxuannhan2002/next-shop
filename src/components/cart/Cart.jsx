@@ -109,7 +109,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
                         </div>
                         {localStorage.getItem('token') ?
                             (cart ? (cart.map((item, index) =>
-                                <div className={styles.productContainer}>
+                                <div className={styles.productContainer} key={''}>
                                     <Image src={item.image} alt='' width={100} height={130} />
 
                                     <div className={styles.detail} key={index}>

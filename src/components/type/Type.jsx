@@ -11,7 +11,7 @@ const Type = ({brand,name}) => {
         <div className={styles.container}>
             <div className={styles.title}>{name}</div>
             <div className={styles.prdContainer}>
-                {fbrand.map((item) => (<Link href={`http://localhost:3000/sanpham/${item.id}`} className={styles.product}>
+                {fbrand.map((item) => (<Link href={`http://localhost:3000/sanpham/${item.id}`} className={styles.product} key={''}>
                     <div className={styles.saleoff}>
                         <span>{item.discount}</span>
                         <span>OFF</span>

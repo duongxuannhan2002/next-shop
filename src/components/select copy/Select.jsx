@@ -129,7 +129,7 @@ const Select = ({ cart, total, setButton }) => {
                 <h1 className={styles.x} onClick={() => setButton(false)}>X</h1>
                 <h2>Thông tin mặt hàng</h2>
                 <div className={styles.fullItem}>
-                    {cart.length > 0 && cart.map((item) => <div className={styles.info}>
+                    {cart.length > 0 && cart.map((item) => <div className={styles.info} key={''}>
                         <Image src={item.image} height={100} width={130} />
                         <div className={styles.detail}>
                             <h3>{item.name}</h3>
