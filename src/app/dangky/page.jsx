@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
-const Page = () => {
+export default function Page () {
     const [fistName,setFistName] = useState('')
     const [lastName, setLastName] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
@@ -105,5 +105,3 @@ const Page = () => {
         </div>
     )
 }
-
-export default Page
