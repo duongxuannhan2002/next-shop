@@ -4,7 +4,7 @@ import styles from './order.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Page = () => {
+export default function Order() {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState();
   const [oneOrder, setOneOrder] = useState();
@@ -81,4 +81,3 @@ const Page = () => {
   );
 };
 
-export default Page

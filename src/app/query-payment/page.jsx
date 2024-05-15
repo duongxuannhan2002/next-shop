@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './query-payement.module.css'
 import Image from 'next/image'
 
-const Page = () => {
+export default function QueryPayment() {
 
     let data = localStorage.getItem('createOrder')
     let order = JSON.parse(data);
@@ -56,5 +56,3 @@ const Page = () => {
         </div>
     )
 }
-
-export default Page

@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Page = () => {
+export default function Dangnhap() {
     const router = useRouter();
     const [isActive, setActive] = useState(false)
     const [eyeActive, setEyeActive] = useState(false)
@@ -92,4 +92,4 @@ const Page = () => {
     )
 }
 
-export default Page
+
