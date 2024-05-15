@@ -122,8 +122,8 @@ export default function MotSanPham({ params }) {
     return (
         <>
             <Slideshow />
-            {data&&data.map((item) => (<div className={styles.container}>
-                <div className={styles.fulldetail} key={''}>
+            {data&&data.map((item) => (<div className={styles.container} key={''}>
+                <div className={styles.fulldetail} >
                     <Image src={item.image} alt='' width={450} height={500} />
                     <div className={styles.fullinfo}>
                         <div className={styles.name}>{item.name}</div>
