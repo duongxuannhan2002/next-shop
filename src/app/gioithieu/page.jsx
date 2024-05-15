@@ -5,7 +5,7 @@ import Slideshow from '@/components/slideshow/Slideshow'
 import React from 'react'
 import styles from './gioithieu.module.css'
 
-const page = () => {
+const Page = () => {
     return (
         <div>
             <Slideshow />
@@ -72,4 +72,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

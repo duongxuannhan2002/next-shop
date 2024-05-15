@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
     const { sanpham } = params
     const [data, setData] = useState([])
     const [select, setSelect] = useState([])
@@ -181,4 +181,4 @@ const page = ({ params }) => {
     )
 }
 
-export default page
+export default Page

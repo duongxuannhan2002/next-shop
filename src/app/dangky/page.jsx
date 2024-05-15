@@ -1,13 +1,12 @@
 "use client"
 
-import React, { use, useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import styles from './dangky.module.css'
 import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
-
-const page = () => {
+const Page = () => {
     const [fistName,setFistName] = useState('')
     const [lastName, setLastName] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
@@ -107,4 +106,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

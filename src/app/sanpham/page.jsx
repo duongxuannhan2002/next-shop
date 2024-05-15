@@ -4,7 +4,7 @@ import Link from 'next/link'
 import GetProduct from '@/components/getproduct/GetProduct'
 import FilterProduct from '@/components/filterProduct/FilterProduct'
 
-const sanpham =  () => {
+const Page =  () => {
   return (
     <>
       <Slideshow />
@@ -19,4 +19,4 @@ const sanpham =  () => {
   )
 }
 
-export default sanpham
+export default Page
