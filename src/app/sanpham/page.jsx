@@ -19,4 +19,4 @@ const Sanpham =  () => {
   )
 }
 
-export default Page
+export default Sanpham
