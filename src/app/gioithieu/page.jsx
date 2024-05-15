@@ -1,3 +1,5 @@
+"use client"
+
 
 import Slideshow from '@/components/slideshow/Slideshow'
 import React from 'react'

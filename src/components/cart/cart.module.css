@@ -1,0 +1,173 @@
+.cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 33vw;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+.history{
+    padding: 10px;
+    color: chocolate;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.fullItem{
+    height: calc(100vh - 200px);
+    overflow: auto;
+}
+
+.titleContainer{
+    position: relative;
+    margin: 20px 20px 0 20px;
+}
+
+.titleCart{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.totalQuantity{
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+}
+
+.exit{
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.productContainer{
+    padding: 30px 10px 0 35px;
+    display: flex;
+}
+
+.detail{
+    padding: 0 20px;
+    position: relative;
+    width: 75%;
+}
+
+.name{
+    color: #a9a9a9;
+}
+
+.price{
+    padding: 25px 0 ;
+    font-weight: 600;
+}
+
+.size{
+    color: #a9a9a9;
+}
+
+.x{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+
+.change{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: red;
+}
+
+.plus{
+    cursor: pointer;
+}
+
+.minus{
+    cursor: pointer;
+    padding-left: 1px;
+}
+
+.quantity{
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    height: 38px;
+    bottom: 0;
+    right: 20px;
+    border: 1px solid #a9a9a9;
+    padding: 5px 17px;
+}
+
+.bill{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    height: 200px;
+    width: 33vw;
+    background-color: #d7d7d7;
+    padding: 20px;
+}
+
+.information{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid  #939393;
+    padding-top: 10px;
+}
+
+.freeship{
+    position: absolute;
+    color: rgb(116, 116, 116);
+    font-style: italic;
+    right: 0;
+    top: 10px;
+}
+
+.feeTotal{
+    border-top: 1px solid  #939393;
+    margin-top: 35px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payFee{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    background-color: #1f552f;
+    margin-bottom: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.noThing{
+    padding: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cartLink{
+    color: blue;
+    text-decoration: underline;
+}

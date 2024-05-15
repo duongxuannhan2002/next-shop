@@ -1,0 +1,27 @@
+.search{
+    display: flex;
+    position: fixed;
+    right: 110px;
+    top: 85px;
+    height: 40px;
+}
+
+
+.searchInput:focus + .searchButton{
+    background-color: rgb(24, 77, 59);
+    color:white
+}
+
+
+.searchInput{
+    border: none;
+    width: 200px;
+}
+
+.searchButton{
+    border: none;
+    width: 100px;
+    font-weight: 530;
+    font-size: 15px;
+    color: rgb(24, 77, 59); 
+}

@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-color: rgb(184, 184, 184);
+}
+
+.detail{
+    background-color: white;
+    padding: 20px;;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(2, 121, 0);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.fail{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(204, 14, 14);
+}

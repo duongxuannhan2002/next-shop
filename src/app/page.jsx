@@ -15,9 +15,8 @@ const  getData = async (api) => {
 }
 
 
-
 export default async function Home() {
-  const fdata = await getData('http://localhost:3001/api/v1/get-shoes')
+  const fdata = await getData('https://ttcs-delta.vercel.app/api/v1/get-shoes')
   const data = fdata.data
   const groupedByBrand = {};
   data.forEach(item => {

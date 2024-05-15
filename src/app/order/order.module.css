@@ -1,0 +1,70 @@
+.container {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #cdcdcd;
+    justify-content: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.thead {
+    background-color: #f2f2f2;
+}
+
+.th {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tr &:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(238, 40, 40);
+}
+
+.detailOrder {
+    position: fixed;
+    top: 100px;
+    left: 30%;
+    background-color: #ffffff;
+    padding: 30px;
+    height: 80vh;
+    overflow: scroll;
+}
+
+
+.x{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.detailP{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

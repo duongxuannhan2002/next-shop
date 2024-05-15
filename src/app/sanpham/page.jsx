@@ -1,4 +1,3 @@
-
 import styles from "./sanpham.module.css"
 import Slideshow from '@/components/slideshow/Slideshow'
 import Link from 'next/link'
@@ -12,7 +11,7 @@ const sanpham =  () => {
       <div className={styles.container}>
         <div className={styles.title}>Tất cả sản phẩm</div>
         <div className={styles.fullpage}>
-          <FilterProduct/>
+          <GetProduct/>
         </div>
       </div>
     </>

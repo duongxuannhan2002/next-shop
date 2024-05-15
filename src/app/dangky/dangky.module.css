@@ -100,9 +100,15 @@
     font-size: 20px;
     font-weight: 700;
     margin: 30px 0;
+    cursor: pointer;
     
 }
 
 .need {
     color: rgb(88, 88, 88);
+}
+
+.err{
+    color: rgb(213, 53, 53);
+    font-weight: 600;
 }

@@ -71,6 +71,8 @@
 }
 
 .fullsize{
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -82,6 +84,14 @@
     padding: 12px 25px;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.sizenumberN{
+    border: 1px solid red
+}
+
+.remain{
+    color: red;
 }
 
 .allbuy{
