@@ -13,6 +13,7 @@ const Header = () => {
     const [openSearch, setOpensearch] = useState(false)
     const [openCart, setOpenCart] = useState(false)
     const [totalItem, setTotalItem] = useState()
+    const [token, setToken] = useState()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,14 +24,20 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-    
+
     const handleLogOut = () => {
-        localStorage?.removeItem('token')
-        localStorage?.removeItem('name')
-        localStorage?.removeItem('id_user')
-        window.location.href='http://localhost:3000/dangnhap'
+        if (typeof window !== 'undefined') {
+            localStorage?.removeItem('token')
+            localStorage?.removeItem('name')
+            localStorage?.removeItem('id_user')
+            window.location.href = 'http://localhost:3000/dangnhap'
+        }
+        
     }
 
+    useEffect(()=>{
+        setToken(localStorage.getItem('token'))
+    },[])
 
     return (
         <div className={`${styles.container} ${isScrolled ? styles.scrolled : ''}`}>
@@ -42,19 +49,19 @@ const Header = () => {
                 <Link href='/' className={styles.link}>TRANG CHỦ</Link>
                 <Link href='/sanpham' className={styles.link}>SẢN PHẨM</Link>
                 <Link href='/gioithieu' className={styles.link}>GIỚI THIỆU</Link>
-                {localStorage?.getItem('token') ?
-                <Link href='/dangnhap' className={styles.link} onClick={handleLogOut}>ĐĂNG XUẤT</Link> : 
-                <Link href='/dangnhap' className={styles.link}>ĐĂNG NHẬP</Link>
-            }
-                
+                {token?
+                    <Link href='/dangnhap' className={styles.link} onClick={handleLogOut}>ĐĂNG XUẤT</Link> :
+                    <Link href='/dangnhap' className={styles.link}>ĐĂNG NHẬP</Link>
+                }
+
             </div>
             <div className={styles.right}>
                 <Image src='/shopping-cart.png' alt='' width={25} height={25} className={styles.image} onClick={() => setOpenCart(!openCart)} />
-                {localStorage?.getItem('token')&&totalItem ? <div className={styles.totalItem}>{totalItem}</div> : ""}
+                {token && totalItem ? <div className={styles.totalItem}>{totalItem}</div> : ""}
                 <Image src='/search.png' alt='' width={23} height={23} className={styles.image} onClick={() => setOpensearch(!openSearch)} />
             </div>
             <Search openSearch={openSearch} />
-            <Cart openCart={openCart} setOpenCart={setOpenCart} setTotalItem= {setTotalItem}/>
+            <Cart openCart={openCart} setOpenCart={setOpenCart} setTotalItem={setTotalItem} />
         </div>
     )
 }

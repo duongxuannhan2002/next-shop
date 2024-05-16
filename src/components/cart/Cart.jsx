@@ -10,6 +10,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
     const [cart, setCart] = useState([])
     const [total, setTotal] = useState()
     const [button, setButton] = useState(false)
+    const [token, setToken] = useState()
 
     const { check, setCheck } = useMyContext()
     const fetchData = async () => {
@@ -96,18 +97,22 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
         setOpenCart(false)
     }
 
+    useEffect(()=>{
+        setToken(localStorage.getItem('token'))
+    },[])
+
     return (
         <>
             {openCart &&
                 <div className={styles.cart}>
-                    {localStorage?.getItem('token')&&<Link href='/order' className={styles.history} onClick={()=> setOpenCart(false)} >Đơn hàng đã đặt &gt;&gt;</Link>}
+                    {token&&<Link href='/order' className={styles.history} onClick={()=> setOpenCart(false)} >Đơn hàng đã đặt &gt;&gt;</Link>}
                     <div className={styles.fullItem}>
                         <div className={styles.titleContainer}>
                             <span className={styles.titleCart}>Giỏ hàng</span>
-                            {localStorage?.getItem('token') ? <span className={styles.totalQuantity}>({cart.length} sản phẩm)</span> : ''}
+                            {token ? <span className={styles.totalQuantity}>({cart.length} sản phẩm)</span> : ''}
                             <span className={styles.exit} onClick={() => setOpenCart(!openCart)}>x</span>
                         </div>
-                        {localStorage?.getItem('token') ?
+                        {token ?
                             (cart ? (cart.map((item, index) =>
                                 <div className={styles.productContainer} key={''}>
                                     <Image src={item.image} alt='' width={100} height={130} />
@@ -133,7 +138,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
                             </div>
                         }
                     </div>
-                    {localStorage?.getItem('token') ? <div className={styles.bill}>
+                    {token ? <div className={styles.bill}>
                         <div className={styles.information}>
                             <span className={styles.freeship}>Miễn phí vận chuyển</span>
                         </div>
