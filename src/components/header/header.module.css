@@ -1,5 +1,5 @@
 .container {
-    z-index: 9999;
+    z-index: 99;
     position: fixed;
     top: 0;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: space-between;
     height: 70px;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     transition: background-color 0.3s;
 }
 
@@ -36,8 +36,7 @@
 
 .navigation {
     display: flex;
-    left: 30%;
-    flex: 3;
+    flex: 4;
     justify-content: center;
     gap: 50px;
     color: rgb(255, 255, 255);
@@ -76,3 +75,75 @@
 .scrolled {
     background-color: #5a5a5a;
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navigation{
+        gap: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navigation{
+        gap: 20px;
+        font-size: 14px;
+    }
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.line{
+    background-color: #f00;
+    height: 3px;
+    width: 20px;
+    margin-bottom: 2px;
+}
+
+.mNavigation{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .navigation{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .line{
+        background-color: rgb(0, 0, 0);
+        border-radius: 1px;
+        height: 3px;
+        width: 20px;
+        margin-bottom: 2px;
+    }
+
+    .mNavigation{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100vw;
+        height: 50vh;
+        background-color: aqua;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+

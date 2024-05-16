@@ -53,12 +53,25 @@ const Header = () => {
                     <Link href='/dangnhap' className={styles.link} onClick={handleLogOut}>ĐĂNG XUẤT</Link> :
                     <Link href='/dangnhap' className={styles.link}>ĐĂNG NHẬP</Link>
                 }
-
             </div>
             <div className={styles.right}>
                 <Image src='/shopping-cart.png' alt='' width={25} height={25} className={styles.image} onClick={() => setOpenCart(!openCart)} />
                 {token && totalItem ? <div className={styles.totalItem}>{totalItem}</div> : ""}
                 <Image src='/search.png' alt='' width={23} height={23} className={styles.image} onClick={() => setOpensearch(!openSearch)} />
+            </div>
+            <div className={styles.menu}>
+                <div className={styles.line}></div>
+                <div className={styles.line}></div>
+                <div className={styles.line}></div>
+            </div>
+            <div className={styles.mNavigation}>
+                <Link href='/' className={styles.link}>TRANG CHỦ</Link>
+                <Link href='/sanpham' className={styles.link}>SẢN PHẨM</Link>
+                <Link href='/gioithieu' className={styles.link}>GIỚI THIỆU</Link>
+                {token?
+                    <Link href='/dangnhap' className={styles.link} onClick={handleLogOut}>ĐĂNG XUẤT</Link> :
+                    <Link href='/dangnhap' className={styles.link}>ĐĂNG NHẬP</Link>
+                }
             </div>
             <Search openSearch={openSearch} />
             <Cart openCart={openCart} setOpenCart={setOpenCart} setTotalItem={setTotalItem} />
