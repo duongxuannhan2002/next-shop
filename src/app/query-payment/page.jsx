@@ -57,8 +57,8 @@ export default function QueryPayment() {
                         <div className={styles.fail}>THẤT BẠI</div>
                     </>}
                 <div className={styles.info}>
-                    <div>Số tiền thanh toán: <b>{order.totalPrice}đ</b></div>
-                    <div>Thời gian: <b>{order.order_date}</b></div>
+                    <div>Số tiền thanh toán: <b>{order?.totalPrice}đ</b></div>
+                    <div>Thời gian: <b>{order?.order_date}</b></div>
                 </div>
             </div>
         </div>
