@@ -58,7 +58,7 @@ export default function Dangky() {
                     toast.error(resData.error)
                 }else{
                     toast.success('Thành công')
-                    window.location.href = 'http://localhost:3000/dangnhap'
+                    window.location.href = 'https://next-shop-gules.vercel.app/dangnhap'
                 }
                 console.log(resData);
             } catch (error) {

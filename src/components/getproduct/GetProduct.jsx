@@ -75,7 +75,7 @@ const GetProduct = () => {
                 handleOnClickValue={handleOnClickValue} sort={sort} brand={brand} value={value} />
             <div className={styles.prdContainer}>
                 {ldata.length !== 0 ? ldata.map((item) => (
-                    <Link href={`http://localhost:3000/sanpham/${item.id}`} className={styles.product} key={item.id}>
+                    <Link href={`https://next-shop-gules.vercel.app/sanpham/${item.id}`} className={styles.product} key={item.id}>
                         <div className={styles.saleoff}>
                             <span>{item.discount}</span>
                             <span>OFF</span>
@@ -90,7 +90,7 @@ const GetProduct = () => {
                     </Link>
                 )) :
                     data.map((item) => (
-                        <Link href={`http://localhost:3000/sanpham/${item.id}`} className={styles.product} key={item.id}>
+                        <Link href={`https://next-shop-gules.vercel.app/sanpham/${item.id}`} className={styles.product} key={item.id}>
                             <div className={styles.saleoff}>
                                 <span>{item.discount}</span>
                                 <span>OFF</span>

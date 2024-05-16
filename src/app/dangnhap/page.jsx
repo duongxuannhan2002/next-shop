@@ -53,7 +53,7 @@ export default function Dangnhap() {
                 localStorage?.setItem('token', responseData.token)
                 localStorage?.setItem('name', responseData.data.name)
                 localStorage?.setItem('id_user', responseData.data.id)
-                window.location.href='http://localhost:3000/'
+                window.location.href='https://next-shop-gules.vercel.app'
             }
         } catch (error) {
             console.error('Error:', error)

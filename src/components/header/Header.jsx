@@ -30,7 +30,7 @@ const Header = () => {
             localStorage?.removeItem('token')
             localStorage?.removeItem('name')
             localStorage?.removeItem('id_user')
-            window.location.href = 'http://localhost:3000/dangnhap'
+            window.location.href = 'https://next-shop-gules.vercel.app/dangnhap'
         }
         
     }

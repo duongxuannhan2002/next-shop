@@ -11,7 +11,7 @@ const Type = ({brand,name}) => {
         <div className={styles.container}>
             <div className={styles.title}>{name}</div>
             <div className={styles.prdContainer}>
-                {fbrand.map((item) => (<Link href={`http://localhost:3000/sanpham/${item.id}`} className={styles.product} key={''}>
+                {fbrand.map((item) => (<Link href={`https://next-shop-gules.vercel.app/sanpham/${item.id}`} className={styles.product} key={''}>
                     <div className={styles.saleoff}>
                         <span>{item.discount}</span>
                         <span>OFF</span>
@@ -25,7 +25,7 @@ const Type = ({brand,name}) => {
                     </div>
                 </Link>))}
             </div>
-            <Link href={'http://localhost:3000/sanpham'} className={styles.more}>MORE</Link>
+            <Link href={'https://next-shop-gules.vercel.app/sanpham'} className={styles.more}>MORE</Link>
         </div>
     )
 }
