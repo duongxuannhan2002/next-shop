@@ -25,7 +25,7 @@ export default function QueryPayment() {
     const urlParams = new URLSearchParams(window.location.search);
     let url = urlParams.get('vnp_ResponseCode');
     useEffect(() => {
-        if (typeof window !== 'undefined') {
+        if (typeof localStorage !== undefined) {
             let data = localStorage?.getItem('createOrder')
             let ndata = JSON.parse(data);
             setOrder(ndata);
