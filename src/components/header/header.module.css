@@ -122,7 +122,7 @@
     }
     
     .line{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         border-radius: 1px;
         height: 3px;
         width: 20px;
@@ -137,9 +137,19 @@
         top: 0;
         width: 100vw;
         height: 50vh;
-        background-color: aqua;
+        background-color: rgb(186, 186, 186);
         align-items: center;
         justify-content: space-around;
+    }
+
+    .link{
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nNavigation{
+        display: none;
     }
 }
 

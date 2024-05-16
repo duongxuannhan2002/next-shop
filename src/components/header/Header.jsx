@@ -14,6 +14,7 @@ const Header = () => {
     const [openCart, setOpenCart] = useState(false)
     const [totalItem, setTotalItem] = useState()
     const [token, setToken] = useState()
+    const [menu, setMenu] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -59,12 +60,12 @@ const Header = () => {
                 {token && totalItem ? <div className={styles.totalItem}>{totalItem}</div> : ""}
                 <Image src='/search.png' alt='' width={23} height={23} className={styles.image} onClick={() => setOpensearch(!openSearch)} />
             </div>
-            <div className={styles.menu}>
+            <div className={styles.menu} onClick={() => setMenu(!menu) }>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
                 <div className={styles.line}></div>
             </div>
-            <div className={styles.mNavigation}>
+            <div className={menu ? `${styles.mNavigation}` : `${styles.nNavigation}`}>
                 <Link href='/' className={styles.link}>TRANG CHỦ</Link>
                 <Link href='/sanpham' className={styles.link}>SẢN PHẨM</Link>
                 <Link href='/gioithieu' className={styles.link}>GIỚI THIỆU</Link>
