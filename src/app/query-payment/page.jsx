@@ -7,6 +7,7 @@ import Image from 'next/image'
 export default function QueryPayment() {
 
     const [order, setOrder] = useState()
+    const [url, setUrl] = useState
 
     const fetchAPI = async () => {
         try {
@@ -22,8 +23,12 @@ export default function QueryPayment() {
             console.error('Error:', error)
         }
     }
-    const urlParams = new URLSearchParams(window.location.search);
-    let url = urlParams.get('vnp_ResponseCode');
+
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        setUrl(urlParams.get('vnp_ResponseCode'));
+    })
+
     useEffect(() => {
         if (typeof localStorage !== undefined) {
             let data = localStorage?.getItem('createOrder')
