@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function QueryPayment() {
 
     const [order, setOrder] = useState()
-    const [url, setUrl] = useState
+    const [url, setUrl] = useState()
 
     const fetchAPI = async () => {
         try {
