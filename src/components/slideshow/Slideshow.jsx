@@ -12,7 +12,7 @@ const Slideshow = () => {
         justifyContent: 'center',
         backgroundSize: 'cover',
         height: '400px',
-        
+        width:'100vw'
       }
     const slideImage = [
         'p1.jpg',

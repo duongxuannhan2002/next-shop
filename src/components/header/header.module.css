@@ -86,7 +86,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .navigation{
         gap: 20px;
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -104,9 +104,11 @@
     margin-bottom: 2px;
 }
 
-.mNavigation{
+.nNavigation{
     display: none;
 }
+
+
 
 @media (max-width: 767px) {
     .navigation{
