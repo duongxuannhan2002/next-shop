@@ -1,35 +1,24 @@
 "use client"
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
-import React from 'react'
-import styles from './slideshow.module.css'
-import {Zoom} from 'react-slideshow-image'
-import 'react-slideshow-image/dist/styles.css'
-
-const Slideshow = () => {
-    const divStyle = {
-        display: 'block',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundSize: 'cover',
-        height: '400px',
-        width:'100vw'
-      }
-    const slideImage = [
-        'p1.jpg',
-        'p2.jpg',
-        'p3.jpg'
-    ]
-  return (
-    <div className={styles.container}>
-        <Zoom scale={0.5} >
-            {slideImage.map((each,index) => (
-                <div key={index} className=''>
-                    <div style={{...divStyle ,'backgroundImage' : `url(${each})`, zIndex: -1}}></div>
+class DemoCarousel extends Component {
+    render() {
+        return (
+            <Carousel showThumbs={false} autoPlay={true} transitionTime={1000} infiniteLoop={true}>
+                <div>
+                    <img src="p1.jpg" />
                 </div>
-            ))}
-        </Zoom>
-    </div>
-  )
-}
+                <div>
+                    <img src="p2.jpg" />
+                </div>
+                <div>
+                    <img src="p3.jpg" />
+                </div>
+            </Carousel>
+        );
+    }
+};
 
-export default Slideshow
+export default DemoCarousel
