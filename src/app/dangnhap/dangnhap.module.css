@@ -105,3 +105,9 @@
 .need {
     color: rgb(88, 88, 88);
 }
+
+@media (max-width: 480px) {
+    .form{
+        width: 98vw;
+    }
+}

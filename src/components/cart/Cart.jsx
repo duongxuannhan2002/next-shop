@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useMyContext } from '@/context'
 import Select from '../select copy/Select'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
     const [cart, setCart] = useState([])
@@ -25,7 +27,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
     };
 
     useEffect(() => {
-        
+
         if (localStorage?.getItem('token') != null) {
             fetchData();
         }
@@ -93,19 +95,24 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
     }, [check])
 
     const handleCLickBuy = () => {
-        setButton(!button)
-        setOpenCart(false)
+        if (cart.length>0) {
+            setButton(!button)
+            setOpenCart(false)
+        }else{
+            toast.error('Giỏ hàng trống')
+        }
+
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         setToken(localStorage.getItem('token'))
-    },[])
+    }, [])
 
     return (
         <>
             {openCart &&
                 <div className={styles.cart}>
-                    {token&&<Link href='/order' className={styles.history} onClick={()=> setOpenCart(false)} >Đơn hàng đã đặt &gt;&gt;</Link>}
+                    {token && <Link href='/order' className={styles.history} onClick={() => setOpenCart(false)} >Đơn hàng đã đặt &gt;&gt;</Link>}
                     <div className={styles.fullItem}>
                         <div className={styles.titleContainer}>
                             <span className={styles.titleCart}>Giỏ hàng</span>
@@ -150,6 +157,7 @@ const Cart = ({ openCart, setOpenCart, setTotalItem }) => {
                     </div> : ''}
                 </div>}
             {button ? <Select cart={cart} total={total} setButton={setButton} /> : ''}
+            <ToastContainer position='bottom-left'/>
         </>
     )
 }

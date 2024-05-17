@@ -112,3 +112,9 @@
     color: rgb(213, 53, 53);
     font-weight: 600;
 }
+
+@media (max-width: 480px) {
+    .form{
+        width: 98vw;
+    }
+}

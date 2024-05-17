@@ -173,7 +173,7 @@ const Select = ({ cart, total, setButton }) => {
                 </select>
                 <div className={styles.button} onClick={handleOrder}>Đặt hàng</div>
             </div>
-            <ToastContainer/>
+            <ToastContainer position='bottom-left'/>
         </>
     )
 }

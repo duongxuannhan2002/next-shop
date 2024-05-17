@@ -39,7 +39,7 @@ export default function QueryPayment() {
             } else {
             }
         }
-    })
+    },[url])
 
 
 

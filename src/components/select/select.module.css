@@ -10,6 +10,7 @@
     left: 22%;
     background-color: rgb(179, 179, 179);
     height: 70vh;
+    overflow: auto;
 }
 
 .x{
