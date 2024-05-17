@@ -37,3 +37,10 @@
 .newO{
     background-color: black;
 }
+
+@media (max-width: 767px) {
+    .include{
+        font-size: 1.3vh;
+
+    }
+}

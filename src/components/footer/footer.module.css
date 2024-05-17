@@ -172,7 +172,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .info{
         flex-direction: column;
         justify-content: center;
@@ -216,6 +216,55 @@
     }
 }
 
+@media (max-width: 481px){
+    .benfenit{
+        gap: 10px;
+        height: 200px;
+    }
+
+    .imgBenfenit{
+        height: 40px;
+        padding-left: 10px
+    }
+
+    .material{
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .fcontact{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .connect{
+        width: 80%;
+        border: none;
+        padding: 10px;
+    }
+
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .infoGener{
+        width: 80%;
+        border: none;
+        padding: 10px;
+
+    }
+
+    .help{
+        width: 80%;
+        border: none;
+        padding: 10px;
+
+    }
+}
 
 
 
