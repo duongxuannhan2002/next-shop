@@ -31,7 +31,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 420px;
 }
 
 .product:hover{
@@ -95,5 +94,24 @@
     font-size: 32px;
 }
 
+
+@media (max-width: 767px){
+    .imagePrd{
+        height: 140px;
+        width: 140px;
+    }
+    .prdContainer{
+        padding: 20px 9px 0 10px;
+    }
+    .price{
+        gap: 10px;
+    }
+    .pPrice{
+        font-size: 11px;
+    }
+    .nPrice{
+        font-size: 11px;
+    }
+}
 
 

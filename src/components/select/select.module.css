@@ -1,13 +1,15 @@
 .container {
+    z-index: 99999;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     font-family: Arial, sans-serif;
     width: 50%;
     margin: 50px auto;
     text-align: center;
-    top: 50%;
-    left: 20%;
+    top: 5%;
+    left: 22%;
     background-color: rgb(179, 179, 179);
+    height: 70vh;
 }
 
 .x{
@@ -60,4 +62,39 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .container{
+        width: 80vw;
+        left: 10vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100vw;
+        left: 0vw;
+    }
+
+    .info{
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    .select{
+        width: 100%;
+    }
+    
+    .input{
+        width: 100%;
+    }
+
+    .button{
+        width: 50%;
+    }
+}
+
+@media (max-width: 481px) {
+
 }

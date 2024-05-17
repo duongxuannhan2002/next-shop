@@ -1,15 +1,15 @@
 .container {
     padding: 20px;
-    position: absolute;
+    position: fixed;
     font-family: Arial, sans-serif;
     width: 50%;
     margin: 50px auto;
     text-align: center;
-    top: 30%;
-    left: 20%;
+    top: 5%;
+    left: 22%;
     background-color: rgb(179, 179, 179);
     overflow: auto;
-    height: 600px;
+    height: 70vh;
 }
 
 .x{

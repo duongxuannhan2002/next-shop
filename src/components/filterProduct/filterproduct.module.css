@@ -41,6 +41,12 @@
 @media (max-width: 767px) {
     .include{
         font-size: 1.3vh;
-
+    }
+    .filter{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .sort{
+        padding: 5px;
     }
 }

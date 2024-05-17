@@ -25,3 +25,9 @@
     font-size: 15px;
     color: rgb(24, 77, 59); 
 }
+
+@media (max-width: 481px){
+    .search{
+        right: 2vw;
+    }
+}

@@ -16,7 +16,20 @@
 
 .fullpage{
     display: flex;
+    
     width: 85%
+}
+
+
+@media (max-width: 767px){
+    .fullpage{
+        flex-direction: column;
+        width: 97%;
+    }
+
+    .title{
+        padding-top: 40px;
+    }
 }
 
 

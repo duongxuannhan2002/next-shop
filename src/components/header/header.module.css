@@ -160,6 +160,10 @@
         padding-right: 60px;
         gap: 10px;
     }
+
+    .totalItem{
+        right: 85px;
+    }
 }
 
 

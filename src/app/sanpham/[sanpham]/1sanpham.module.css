@@ -154,5 +154,45 @@
 }
 
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .fulldetail{
+        width: 98%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .img{
+        height: 300px;
+        width: 270px;
+    }
+
+    .fulldetail{
+        align-items: center;
+        width: 98%;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .fulldetail{
+        align-items: center;
+        width: 98%;
+        flex-direction: column;
+    }
+
+    .img{
+        height: 270px;
+        width: 250px;
+    }
+
+    .size{
+        padding: 20px 0;
+    }
+
+    .add{
+        padding: 13px;
+    }
+}
 
 
