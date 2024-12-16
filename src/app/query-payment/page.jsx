@@ -56,10 +56,10 @@ export default function QueryPayment() {
                         <Image src='/fail.png' height={100} width={100} />
                         <div className={styles.fail}>THẤT BẠI</div>
                     </>}
-                <div className={styles.info}>
+                {/* <div className={styles.info}>
                     <div>Số tiền thanh toán: <b>{order?.totalPrice}đ</b></div>
                     <div>Thời gian: <b>{order?.order_date}</b></div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
